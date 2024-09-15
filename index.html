@@ -13,13 +13,13 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav id="navigation">
+        <nav class="navigation" id="home">
             <div class="logo">
               <h1>Kazungu</h1>
             </div>
             <ul>
               <li>
-                <a href="#navigation">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
                 <a href="#about">About</a>
@@ -41,7 +41,7 @@
             <div class="menubar">
                 <ul>
                     <li>
-                        <a href="#navigation">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
                         <a href="#about">About Me</a>
@@ -183,11 +183,8 @@
             </div>
         </footer>
 
-        <script>
-            document.querySelector(".hamburger").addEventListener("click", () => {
-                document.querySelector(".menubar").classList.toggle("active");
-            });
-        </script>
+        <script src="./scripts/script.js"></script>
+
     </body>
     
 </html>

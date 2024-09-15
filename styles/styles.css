@@ -47,6 +47,7 @@ nav .logo {
   display: flex;
   align-items: center;
   color: rgb(202, 202, 202);
+  font-size: small;
 }
 
 nav ul {
@@ -386,7 +387,7 @@ ul.social-network li {
     align-items: center;
 }
 
-.cta-button>a:hover, .about-button>a:hover{
+.cta-button>a:hover, .about-button>a:hover, #form-submit:hover{
     background-color: orange;
     border: none;
 }
@@ -394,6 +395,14 @@ ul.social-network li {
 .cta-container{
     border: 2px solid grey;
     padding: 30px;
+}
+
+form{
+  width: 60%;
+}
+
+.form-group{
+  margin-bottom: 20px;
 }
 
 footer{

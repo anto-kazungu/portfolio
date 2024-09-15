@@ -11,22 +11,22 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav id="navigation">
+        <nav class="navigation" id="home">
             <div class="logo">
               <h1>Kazungu</h1>
             </div>
             <ul>
               <li>
-                <a href="#navigation">Home</a>
+                <a href="../index.html#home">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="../index.html#about">About</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="../index.html#projects">Projects</a>
               </li>
               <li>
-                <a href="#cta">Reach Out</a>
+                <a href="../index.html#cta">Reach Out</a>
               </li>
             </ul>
             <div class="hamburger">
@@ -34,22 +34,20 @@
               <span class="line"></span>
               <span class="line"></span>
             </div>
-
           <!-- Sidebar -->
-
           <div class="menubar">
             <ul>
                 <li>
-                <a href="#navigation">Home</a>
+                <a href="../index.html#home">Home</a>
                 </li>
               <li>
-                <a href="#about">About Me</a>
+                <a href="../index.html#about">About Me</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="../index.html#projects">Projects</a>
               </li>
               <li>
-                <a href="#cta">Reach Out</a>
+                <a href="../index.html#cta">Reach Out</a>
               </li>
             </ul>
           </div>
@@ -57,14 +55,59 @@
 
         <!-- Profile Section -->
         <main class="container" id="top-page">
-            
+            <!-- contact form -->
+            <div class="wow animated fadeInRight" data-wow-delay=".2s">
+              <div class="section-heading">
+                <h1 class="section-heading py-4">How Can I Help?</h1>
+              </div>
+
+            <div class="form-container container">
+              <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator"></form>
+              <!-- Name -->
+                <div class="form-group label-floating">
+                  <label class="control-label" for="name">Name</label>
+                  <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- email -->
+                <div class="form-group label-floating">
+                  <label class="control-label" for="email">Email</label>
+                  <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- Subject -->
+                <div class="form-group label-floating">
+                  <label class="control-label">Subject</label>
+                  <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- Message -->
+                <div class="form-group label-floating">
+                  <label for="message" class="control-label">Message</label>
+                  <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- Form Submit -->
+                <div class="form-submit mt-2 text-center">
+                  <button class="btn btn-outline-dark py-3 px-4 rounded-pill mt-5" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+              
+              
+          </div>
         </main>
 
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Copyright -->
-        <div class="text-center text-light p-3" style="background-color: #557C56;">
-        © 2024 Copyright - Kazungu Designs Inc.
-        </div>
-    </footer>
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+          <!-- Copyright -->
+          <div class="text-center text-light p-3" style="background-color: #557C56;">
+          © 2024 Copyright - Kazungu Designs Inc.
+          </div>
+      </footer>
+
+      <script src="../scripts/script.js"></script>
+    </body>
     
 </html>
