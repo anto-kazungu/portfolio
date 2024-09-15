@@ -41,7 +41,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    }
+}
 
 nav .logo {
   display: flex;
@@ -66,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-weight: bold;
+  font-weight: bold;
   color: orange;
 }
 
@@ -106,7 +106,36 @@ nav ul li a:hover {
   transform: translateY(-5px) rotate(90deg);
 }
 
+/* Fix for Hamburger Menu */
+
 .menubar {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Hide the sidebar off-screen */
+  width: 60%;
+  background-color: #557C56; /* Adjust background to match your design */
+  transition: left 0.3s ease-in-out; /* Smooth transition for sliding in */
+  z-index: 999; /* Ensure the sidebar is on top of other content */
+}
+
+.menubar.active {
+  left: 0; /* Slide the sidebar into view */
+}
+
+.menubar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; /* Full height of the viewport for a full-screen menu */
+}
+
+.menubar li {
+  margin: 20px 0; /* Add spacing between menu items */
+}
+
+/* End */
+
+/* .menubar {
   position: absolute;
   top: 0;
   left: -60%;
@@ -116,10 +145,11 @@ nav ul li a:hover {
   width: 60%;
   height: 100vh;
   padding: 20% 0;
-  background: rgba(255, 255, 255);
+  background: orange;
   transition: all 0.5s ease-in;
   z-index: 2;
 }
+
 .active {
   left: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -131,19 +161,19 @@ nav ul li a:hover {
 }
 .menubar ul li {
   margin-bottom: 32px;
-}
+} */
 
 .menubar ul li a {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 95%;
-  font-weight: 400;
+  font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .menubar ul li a:hover {
-  background-color: #f5f5f5;
+  color: orange;
 }
 
 .profile-container{
@@ -404,11 +434,12 @@ footer{
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .hamburger {
     display: block;
   }
-  nav ul {
+
+  nav ul{
     display: none;
   }
 

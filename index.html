@@ -36,23 +36,22 @@
             </div>
 
           <!-- Sidebar -->
-
-          <div class="menubar">
-            <ul>
-                <li>
-                <a href="#navigation">Home</a>
-                </li>
-              <li>
-                <a href="#about">About Me</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#cta">Reach Out</a>
-              </li>
-            </ul>
-          </div>
+            <div class="menubar">
+                <ul>
+                    <li>
+                        <a href="#navigation">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#cta">Reach Out</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Profile Section -->
@@ -174,11 +173,18 @@
             </section>
         </main>
 
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Copyright -->
-        <div class="text-center text-light p-3" style="background-color: #557C56;">
-        © 2024 Copyright - Kazungu Designs Inc.
-        </div>
-    </footer>
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Copyright -->
+            <div class="text-center text-light p-3" style="background-color: #557C56;">
+            © 2024 Copyright - Kazungu Designs Inc.
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector(".hamburger").addEventListener("click", () => {
+                document.querySelector(".menubar").classList.toggle("active");
+            });
+        </script>
+    </body>
     
 </html>
