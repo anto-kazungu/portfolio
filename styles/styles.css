@@ -70,7 +70,7 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav ul li a:hover {
+.nav-bar nav ul li a:hover {
   font-weight: bold;
   color: orange;
 }
@@ -226,7 +226,7 @@ nav ul li a:hover {
 
 .profile-career{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color: orange;
 }
 
